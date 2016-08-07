@@ -1,4 +1,4 @@
-package org.java.lambda;
+package org.java8.lambda;
 
 import static org.junit.Assert.assertTrue;
 
