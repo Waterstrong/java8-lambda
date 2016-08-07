@@ -1,4 +1,4 @@
-package org.java8.streams;
+package org.fp.streams;
 
 import static java.util.stream.Collectors.toList;
 import static org.apache.commons.lang3.StringUtils.contains;

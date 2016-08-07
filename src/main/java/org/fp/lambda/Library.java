@@ -1,4 +1,4 @@
-package org.java8.lambda;
+package org.fp.lambda;
 
 public class Library {
     public boolean someLibraryMethod() {

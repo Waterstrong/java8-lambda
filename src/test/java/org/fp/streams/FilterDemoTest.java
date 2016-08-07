@@ -1,4 +1,4 @@
-package org.java8.streams;
+package org.fp.streams;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.core.Is.is;
