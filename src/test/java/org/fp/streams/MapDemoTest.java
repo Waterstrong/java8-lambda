@@ -2,7 +2,6 @@ package org.fp.streams;
 
 import static java.util.Arrays.asList;
 import static org.hamcrest.core.Is.is;
-import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertThat;
 
 import java.util.List;
@@ -10,14 +9,14 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-public class FindDemoTest {
+public class MapDemoTest {
 
-    private FindDemo findDemo;
+    private MapDemo mapDemo;
     private List<Book> books;
 
     @Before
     public void setUp() {
-        findDemo = new FindDemo();
+        mapDemo = new MapDemo();
         books = asList(
                 new Book(111, "C++ Primer"),
                 new Book(112, "Refactor"),
@@ -25,15 +24,13 @@ public class FindDemoTest {
     }
 
     @Test
-    public void shouldFindBookGivenBookNameInTheList() {
-        Book book = findDemo.findOut(books, "Primer");
-
-        assertThat(book.getId(), is(111));
-        assertThat(book.getName(), is("C++ Primer"));
+    public void shouldFindOutForNameGivenBookNameInTheList() {
+        assertThat(mapDemo.findOut(books, "primer"), is("C++ Primer"));
     }
 
     @Test
-    public void shouldReturnNullGivenBookNameNotInTheList() {
-        assertNull(findDemo.findOut(books, "Hello"));
+    public void shouldFindOutForNameReturnEmptyGivenBookNameNotInTheList() {
+        assertThat(mapDemo.findOut(books, "hello"), is(""));
     }
+
 }
