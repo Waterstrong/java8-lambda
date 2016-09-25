@@ -9,15 +9,15 @@ import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ForEachDemoTest {
+public class AForEachDemoTest {
 
     private List<String> lines;
-    private ForEachDemo forEachDemo;
+    private AForEachDemo forEachDemo;
 
     @Before
     public void setUp() {
         lines = asList("water", "lsq@demo.com", "sss", "hello");
-        forEachDemo = new ForEachDemo();
+        forEachDemo = new AForEachDemo();
     }
 
     @Test

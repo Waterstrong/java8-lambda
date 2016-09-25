@@ -7,13 +7,13 @@ import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ReduceDemoTest {
+public class AReduceDemoTest {
 
-    private ReduceDemo reduceDemo;
+    private AReduceDemo reduceDemo;
 
     @Before
     public void setUp() {
-        reduceDemo = new ReduceDemo();
+        reduceDemo = new AReduceDemo();
     }
 
     @Test

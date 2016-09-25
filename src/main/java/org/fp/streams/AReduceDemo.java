@@ -4,7 +4,7 @@ import static java.lang.Integer.MIN_VALUE;
 
 import java.util.List;
 
-public class ReduceDemo {
+public class AReduceDemo {
     public Integer sum(List<Integer> numbers) {
         return numbers.stream().reduce(0, (first, second) -> first + second);
     }

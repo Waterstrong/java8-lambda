@@ -5,7 +5,7 @@ import static org.apache.commons.lang3.StringUtils.appendIfMissing;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ForEachDemo {
+public class AForEachDemo {
 
     public List<String> addSuffix(List<String> lines, String suffix) {
         List<String> results = new ArrayList<>();
