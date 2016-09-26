@@ -24,5 +24,11 @@ public class AOptionalDemoTest {
     @Test
     public void shouldGetSubTotalZeroGivenNullBook() {
         assertThat(optionalDemo.getBookSubtotal(null, 2), is(0d));
+        assertThat(optionalDemo.getBookSubtotal3(null, 2), is(0d));
+    }
+
+    @Test(expected = RuntimeException.class)
+    public void shouldGetThrowExceptionGivenNullBook() {
+        optionalDemo.getBookSubtotal2(null, 2);
     }
 }

@@ -1,6 +1,6 @@
 package org.fp.interfaces;
 
 @FunctionalInterface
-public interface Converter<T, F> {
+public interface Converter<F, T> {
     T convert(F from);
 }
