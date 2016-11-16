@@ -36,4 +36,15 @@ public class FindDemoTest {
     public void shouldReturnNullGivenBookNameNotInTheList() {
         assertNull(findDemo.findOut(books, "Hello"));
     }
+
+    @Test(expected = RuntimeException.class)
+    public void shouldThrowExceptionGivenInvalidBookPrice() {
+        books.add(new Book(114, "Hello", -1d));
+        findDemo.assertBookPriceValid(books);
+    }
+
+    @Test
+    public void shouldNotThrowExceptionGivenValidBookPrice() {
+        findDemo.assertBookPriceValid(books);
+    }
 }

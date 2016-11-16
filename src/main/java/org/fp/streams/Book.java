@@ -3,9 +3,9 @@ package org.fp.streams;
 import static java.lang.Integer.MIN_VALUE;
 
 public class Book {
-    private final int id;
+    private final Integer id;
     private final String name;
-    private final double price;
+    private final Double price;
 
     public Book() {
         this.id = MIN_VALUE;
@@ -13,19 +13,19 @@ public class Book {
         this.price = 0d;
     }
 
-    public Book(int id, String name) {
+    public Book(Integer id, String name) {
         this.id = id;
         this.name = name;
-        this.price = 0;
+        this.price = 0d;
     }
 
-    public Book(int id, String name, double price) {
+    public Book(Integer id, String name, Double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -33,7 +33,7 @@ public class Book {
         return name;
     }
 
-    public double getPrice() {
+    public Double getPrice() {
         return price;
     }
 }
